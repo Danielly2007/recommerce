@@ -12,10 +12,10 @@ import com.senai.ecommerce.repositories.ProdutoRepository;
 public class ProdutoService {
 	
 	@Autowired
-	ProdutoRepository service;
+	ProdutoRepository repo;
 	
-	public List<Produto> buscarTodos();
+	public List<Produto> buscarTodos(){
 	List<Produto> list = repo.findAll();
 	return list;
-
+	}
 }
